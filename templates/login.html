@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bloggin</title>
+        <link rel="stylesheet" href="static/style1.css">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='web-icon.ico') }}">
+
+    <body>
+        <form action="/form_login" method="post">
+        <div class="login-box">
+            <h1>B-Login</h1>
+
+            <div class = 'textbox'>
+                <input type ='text' placeholder="Username" name="username" >
+            </div>
+
+            <div class = 'textbox'>
+                <input type ='password' placeholder="Password" name="passwd" >
+            </div>
+
+            <input class="btn" type="submit" name="" value="sign in">
+        </form>
+        <h2>{{info}}</h2>
+        </div>
+
+    </body>
+</head>
+</html>
